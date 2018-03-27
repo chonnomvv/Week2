@@ -22,11 +22,10 @@
 		String project = request.getParameter("project");
 		String[] lang = request.getParameterValues("lang");
 		String[] temp = { "", "", "", "" };
-		if (lang != null) {
-			for (String index : lang) {
-				int idx = Integer.parseInt(index);
-				temp[idx] = index;
-			}
+
+		for (String index : lang) {
+			int idx = Integer.parseInt(index);
+			temp[idx] = index;
 		}
 		//MemberVO 데이터 클래스를 만들어서 인스턴스를 하나 생성
 		MemberVO vo = new MemberVO();
@@ -43,7 +42,7 @@
 		vo.setLang(temp);
 		out.print(vo);
 		session.setAttribute("vo", vo);
-		response.sendRedirect("storage.jsp");
+		//response.sendRedirect("storage.jsp");
 	%>
 </body>
 </html>

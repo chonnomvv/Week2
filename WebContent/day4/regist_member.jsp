@@ -93,8 +93,8 @@
 				<td><input type="radio" name="tool" value="0"
 					<%=vo.getTool().equals("0") ? "checked" : ""%>>이클립스 <input
 					type="radio" name="tool" value="1"
-					<%=vo.getTool().equals("1") ? "checked" : ""%>>Visual Studio <input
-					type="radio" name="tool" value="2"
+					<%=vo.getTool().equals("1") ? "checked" : ""%>>Visual
+					Studio <input type="radio" name="tool" value="2"
 					<%=vo.getTool().equals("2") ? "checked" : ""%>>Xcode <input
 					type="radio" name="tool" value="3"
 					<%=vo.getTool().equals("3") ? "checked" : ""%>>notepad</td>
@@ -105,13 +105,19 @@
 				<td>프로젝트경험</td>
 				<td><select name="project">
 						<option value="0">프로젝트 경험
-						<option value="1" <%=vo.getProject().equals("1") ? "selected" : ""%>>1~2회
+						<option value="1"
+							<%=vo.getProject().equals("1") ? "selected" : ""%>>1~2회
+
 						
-						<option value="2" <%=vo.getProject().equals("2") ? "selected" : ""%>>3~4회
+						<option value="2"
+							<%=vo.getProject().equals("2") ? "selected" : ""%>>3~4회
+
 						
-						<option value="3" <%=vo.getProject().equals("3")?"selected":"" %>>5~6회
+						<option value="3" <%=vo.getProject().equals("3") ? "selected" : ""%>>5~6회
+
 						
-						<option value="4" <%=vo.getProject().equals("4")?"selected":"" %>>7회이상
+						<option value="4" <%=vo.getProject().equals("4") ? "selected" : ""%>>7회이상
+
 						
 				</select></td>
 				<td></td>
