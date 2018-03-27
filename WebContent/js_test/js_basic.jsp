@@ -23,7 +23,7 @@
 			document.write(i+1);
 		}
 		var total = sum2(10,20);
-		alert(total + " from return function")
+		alert(total + " from return function") 
 	}
 	
 	function sum(a,b){
